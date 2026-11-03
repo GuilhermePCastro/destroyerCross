@@ -1,0 +1,207 @@
+/* ==========================================================================
+   DESTROYER CROSS - ARQUITETURA DE ESTILOS (TAILWIND CSS v4)
+   Paleta Industrial, Energética e High-Tech (#FF7500 | #09090b | #10b981)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import "tailwindcss";
+
+/* --------------------------------------------------------------------------
+   1. CONFIGURAÇÃO DE TEMA (Tailwind CSS v4 @theme)
+   -------------------------------------------------------------------------- */
+@theme {
+  /* Tipografia */
+  --font-display: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Cores da Marca Destroyer Cross */
+  --color-brand-orange: #FF7500;
+  --color-brand-orange-light: #FF9433;
+  --color-brand-orange-dark: #CC5E00;
+  --color-brand-dark: #09090b;
+  --color-brand-charcoal: #18181b;
+  --color-brand-graphite: #27272a;
+  --color-brand-light: #f4f4f5;
+  --color-brand-emerald: #10b981;
+  --color-brand-emerald-dark: #059669;
+}
+
+/* --------------------------------------------------------------------------
+   2. RESET E CONFIGURAÇÕES GLOBAIS DE PERFORMANCE
+   -------------------------------------------------------------------------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    font-family: var(--font-sans);
+    background-color: #09090b;
+    color: #f4f4f5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+    selection-background-color: #FF7500;
+    selection-color: #09090b;
+  }
+
+  ::selection {
+    background-color: #FF7500;
+    color: #09090b;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: 0.03em;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. GRADIENTES ESPORTIVOS E EFEITOS VISUAIS INDUSTRIAIS
+   -------------------------------------------------------------------------- */
+.text-fire-gradient {
+  background: linear-gradient(135deg, #FF7500 0%, #FF9E00 50%, #FFD000 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-neon-gradient {
+  background: linear-gradient(90deg, #FF7500 0%, #FF5500 50%, #FF9E2C 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-sport-gradient {
+  background: linear-gradient(180deg, #09090b 0%, #18181b 50%, #27272a 100%);
+}
+
+/* Textura Industrial de Grid / Concreto Técnico para o Hero e Seções Escuras */
+.bg-industrial-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 117, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 117, 0, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Iluminação Radial Energética */
+.bg-radial-energy {
+  background: radial-gradient(circle at 25% 30%, rgba(255, 117, 0, 0.18) 0%, rgba(9, 9, 11, 0) 60%);
+}
+
+/* Efeitos de Glow Esportivo */
+.glow-orange {
+  box-shadow: 0 0 28px -4px rgba(255, 117, 0, 0.55);
+}
+
+.glow-orange:hover {
+  box-shadow: 0 0 38px 0px rgba(255, 117, 0, 0.8);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px -3px rgba(16, 185, 129, 0.55);
+}
+
+.glow-emerald:hover {
+  box-shadow: 0 0 35px 0px rgba(16, 185, 129, 0.85);
+}
+
+/* Recorte Agressivo Esportivo para Imagens */
+.clip-athletic {
+  clip-path: polygon(0 0, 95% 0, 100% 6%, 100% 100%, 5% 100%, 0 94%);
+}
+
+/* --------------------------------------------------------------------------
+   4. ANIMAÇÕES DE ENTRADA NO SCROLL (IntersectionObserver)
+   -------------------------------------------------------------------------- */
+.animar-cima {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.animar-esquerda {
+  opacity: 0;
+  transform: translateX(-42px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.animar-direita {
+  opacity: 0;
+  transform: translateX(42px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Estado ativado pelo IntersectionObserver */
+.animar-cima.visivel,
+.animar-esquerda.visivel,
+.animar-direita.visivel {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Delays escalonados para grids */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Respeito à preferência de movimento reduzido (Acessibilidade) */
+@media (prefers-reduced-motion: reduce) {
+  .animar-cima,
+  .animar-esquerda,
+  .animar-direita {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. COMPONENTES INTERATIVOS (FAQ ACORDEÃO & WHATSAPP PULSE)
+   -------------------------------------------------------------------------- */
+.faq-resposta {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-item.ativo .faq-resposta {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.faq-item.ativo .faq-icone {
+  transform: rotate(180deg);
+  background-color: #FF7500;
+  color: #09090b;
+  border-color: #FF7500;
+}
+
+/* Pulso contínuo sutil para o botão flutuante do WhatsApp */
+@keyframes pulse-emerald {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.65);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(16, 185, 129, 0);
+  }
+}
+
+.whatsapp-pulse {
+  animation: pulse-emerald 2.4s infinite;
+}
+

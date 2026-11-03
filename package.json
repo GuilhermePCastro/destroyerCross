@@ -1,0 +1,27 @@
+{
+  "name": "destroyer-cross",
+  "version": "1.0.0",
+  "description": "Site Institucional e Landing Page de Alta Conversão - Destroyer Cross (Box Oficial Afiliado CrossFit® em Jd. Myrna, São Paulo - SP)",
+  "private": true,
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./css/index.css -o ./css/output.css --watch",
+    "watch": "npx @tailwindcss/cli -i ./css/index.css -o ./css/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./css/index.css -o ./css/output.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  },
+  "keywords": [
+    "crossfit",
+    "destroyer-cross",
+    "lpo",
+    "hyrox",
+    "jardim-myrna",
+    "sao-paulo",
+    "fitness",
+    "tailwindcss-v4"
+  ],
+  "author": "Destroyer Cross"
+}
+
