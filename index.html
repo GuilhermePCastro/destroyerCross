@@ -45,7 +45,7 @@
     "@context": "https://schema.org",
     "@type": "ExerciseGym",
     "@id": "https://www.destroyercross.com.br/#gym",
-    "name": "Destroyer Cross - Box Oficial Afiliado CrossFit",
+    "name": "Destroyer Cross",
     "alternateName": "Destroyer Cross Training",
     "description": "Box Oficial Afiliado CrossFit® em Jardim Myrna, São Paulo - SP. Treinos dinâmicos adaptados ao seu nível atual: CrossFit, LPO, Ginástica, Endurance e Hyrox. Aceitamos Wellhub (Gympass), TotalPass e Planos Próprios.",
     "url": "https://www.destroyercross.com.br/",
@@ -123,7 +123,7 @@
        ======================================================================== -->
   <header
     id="header-principal"
-    class="sticky top-0 z-50 backdrop-blur-md bg-zinc-950/90 border-b border-white/10 transition-all duration-300"
+    class=" backdrop-blur-md bg-zinc-950/90 border-b border-white/10 transition-all duration-300"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
@@ -133,7 +133,7 @@
           class="flex items-center gap-3.5 group focus:outline-none"
           aria-label="Destroyer Cross - Ir para o início"
         >
-          <div class="relative w-12 h-12 rounded-xl overflow-hidden border-2 border-[#FF7500]/60 group-hover:border-[#FF7500] transition-colors bg-zinc-900 shrink-0">
+          <div class="relative w-14 h-14 rounded-full overflow-hidden transition-colors bg-zinc-900 shrink-0">
             <img
               src="assets/img/logo-destroyer.jpeg"
               alt="Logo Destroyer Cross Training"
@@ -148,10 +148,6 @@
                 DESTROYER <span class="text-[#FF7500]">CROSS</span>
               </span>
             </div>
-            <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-zinc-300 bg-white/5 border border-white/10 px-2 py-0.5 rounded mt-1 w-fit">
-              <span class="w-1.5 h-1.5 rounded-full bg-[#FF7500] animate-pulse"></span>
-              AFILIADO OFICIAL CROSSFIT®
-            </span>
           </div>
         </a>
 
@@ -265,17 +261,24 @@
          ====================================================================== -->
     <section
       id="inicio"
-      class="relative min-h-[calc(100vh-5rem)] flex items-center bg-zinc-950 bg-industrial-grid overflow-hidden py-16 lg:py-24"
+      class="relative min-h-[calc(100vh-5rem)] flex items-center bg-zinc-950 bg-industrial-grid overflow-hidden py-14 lg:py-16"
       aria-label="Apresentação Principal Destroyer Cross"
     >
-      <!-- Imagem de Fundo Esportiva de Alta Qualidade + Overlay Escuro Dramático -->
+      <!-- Vídeo de Fundo Esportivo de Alta Qualidade + Overlay Escuro Dramático -->
       <div class="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80"
-          alt="Atletas treinando no Box de CrossFit Destroyer Cross"
-          class="w-full h-full object-cover object-center opacity-30 scale-105"
-          fetchpriority="high"
-        />
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="auto"
+          poster="https://images.pexels.com/videos/4945157/pictures/preview-0.jpg"
+          class="w-full h-full object-cover object-center opacity-70 pointer-events-none"
+          aria-label="Vídeo de atletas treinando no Box de CrossFit Destroyer Cross"
+        >
+          <source src="https://videos.pexels.com/video-files/4945157/4945157-uhd_2732_1440_24fps.mp4" type="video/mp4" />
+          <source src="https://www.pexels.com/pt-br/download/video/4945157/" type="video/mp4" />
+        </video>
         <div class="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/90 to-zinc-950/40"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-zinc-950/60"></div>
         <div class="absolute inset-0 bg-radial-energy"></div>
@@ -286,9 +289,10 @@
 
           <!-- Coluna Esquerda (7 colunas): Proposta de Valor + Quebra de Objeção + CTAs -->
           <div class="lg:col-span-7 space-y-6 animar-esquerda">
-            <!-- Pill / Badge Superior Energético -->
+           
+             <!-- Pill / Badge Superior Energético -->
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FF7500]/15 border border-[#FF7500]/40 text-[#FF7500] text-xs sm:text-sm font-extrabold tracking-wide uppercase">
-              <span>🔥 BOX AFILIADO OFICIAL • ACEITAMOS WELLHUB &amp; TOTALPASS</span>
+              <span>ACEITAMOS WELLHUB &amp; TOTALPASS</span>
             </div>
 
             <!-- Headline H1 Única da Página -->
@@ -297,20 +301,14 @@
             </h1>
 
             <!-- Sub-headline Explicativa e Acolhedora -->
-            <p class="text-lg sm:text-xl text-zinc-300 max-w-2xl leading-relaxed font-normal">
+            <p class="text-lg sm:text-lg text-zinc-300 max-w-2xl leading-relaxed font-normal">
               Treinos dinâmicos adaptados ao seu nível atual, acompanhamento de Coaches e uma comunidade que não deixa ninguém para trás.
-              <strong class="text-white font-semibold">100% dos treinos são adaptados para iniciantes</strong> — você não precisa estar em forma para dar o primeiro passo no Jd. Myrna!
+            </p>
+            <p>
+              <strong class="text-white font-semibold">100% dos treinos são adaptados para iniciantes</strong> — você não precisa estar em forma para dar o primeiro passo!
             </p>
 
-            <!-- Tags Rápidas de Modalidades -->
-            <div class="flex flex-wrap items-center gap-2 pt-1">
-              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded bg-zinc-900/90 border border-zinc-700 text-zinc-300">CrossFit®</span>
-              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded bg-zinc-900/90 border border-zinc-700 text-zinc-300">LPO (Weightlifting)</span>
-              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded bg-zinc-900/90 border border-zinc-700 text-zinc-300">Ginástica</span>
-              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded bg-zinc-900/90 border border-zinc-700 text-zinc-300">Endurance</span>
-              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded bg-[#FF7500]/20 border border-[#FF7500]/50 text-[#FF7500]">HYROX</span>
-            </div>
-
+           
             <!-- Grupo de Botões (CTAs) -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <!-- Botão Primário: Conversão WhatsApp -->
@@ -318,10 +316,10 @@
                 href="https://wa.me/5511995217571?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20Aula%20Experimental%20Gratuita!"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center justify-center gap-3 bg-[#10b981] hover:bg-[#059669] text-zinc-950 font-extrabold text-base sm:text-lg px-7 py-4 rounded-xl glow-emerald transition-all duration-200 hover:scale-[1.03] cursor-pointer"
+                class="inline-flex items-center justify-center gap-3 bg-[#10b981] hover:bg-[#059669] text-zinc-950 font-extrabold text-base sm:text-base px-7 py-4 rounded-xl glow-emerald transition-all duration-200 hover:scale-[1.03] cursor-pointer"
               >
                 <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.126.556 4.124 1.535 5.862l-1.535 5.608 5.755-1.51c1.691.908 3.621 1.425 5.676 1.425 6.627 0 12-5.373 12-12s-5.373-12-12.431-11.385z"/>
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                 </svg>
                 <span>Agendar Aula Experimental Grátis</span>
               </a>
@@ -370,69 +368,16 @@
                   class="w-10 h-10 rounded-full border-2 border-zinc-950 object-cover"
                 />
                 <span class="w-10 h-10 rounded-full border-2 border-zinc-950 bg-[#FF7500] text-zinc-950 font-extrabold text-xs flex items-center justify-center">
-                  +350
+                  +80
                 </span>
               </div>
               <p class="text-sm text-zinc-300">
-                <strong class="text-white">Mais de 350 alunos ativos</strong> transformando o corpo e a mente todos os dias no Jardim Myrna, SP.
+                <strong class="text-white">Mais de 80 alunos ativos</strong> transformando o corpo e a mente todos os dias!
               </p>
             </div>
           </div>
 
-          <!-- Coluna Direita (5 colunas): Composição Visual Dinâmica + 2 Cards Flutuantes Glassmorphism -->
-          <div class="lg:col-span-5 relative animar-direita">
-            <!-- Moldura Principal em Recorte Esportivo -->
-            <div class="relative mx-auto max-w-md lg:max-w-none">
-              <div class="relative rounded-2xl overflow-hidden border-2 border-[#FF7500]/50 shadow-2xl shadow-[#FF7500]/10 bg-zinc-900 clip-athletic">
-                <img
-                  src="assets/img/emblema-3d.png"
-                  alt="Destroyer Cross Training - Força, Foco, Disciplina e Resultado"
-                  width="600"
-                  height="680"
-                  class="w-full h-[430px] sm:h-[480px] object-cover object-center"
-                />
-                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
-
-                <!-- Destaque Interno Inferior (WOD Experience) -->
-                <div class="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-zinc-950/85 backdrop-blur-md border border-white/10">
-                  <div class="flex items-center justify-between mb-1">
-                    <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#FF7500]">
-                      ⚡ METODOLOGIA DESTROYER CROSS
-                    </span>
-                    <span class="text-xs font-semibold text-emerald-400">Jd. Myrna • SP</span>
-                  </div>
-                  <p class="font-display text-xl text-white tracking-wide">
-                    FORÇA • FOCO • DISCIPLINA • RESULTADO
-                  </p>
-                </div>
-              </div>
-
-              <!-- Card Flutuante 1 (Glassmorphism): 60 min de treino guiado -->
-              <div class=" -mt-4 sm:mt-0 sm:absolute sm:-top-6 sm:-left-6 z-20 p-4 rounded-xl bg-zinc-900/85 backdrop-blur-md border border-white/15 shadow-xl max-w-xs">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-lg bg-[#FF7500]/20 border border-[#FF7500]/40 flex items-center justify-center text-lg shrink-0">
-                    ⏱️
-                  </div>
-                  <p class="text-xs sm:text-sm font-semibold text-white leading-snug">
-                    60 min de treino guiado do aquecimento ao pós-treino
-                  </p>
-                </div>
-              </div>
-
-              <!-- Card Flutuante 2 (Glassmorphism): 4.9/5 Google Reviews -->
-              <div class="mt-3 sm:mt-0 sm:absolute sm:-bottom-6 sm:-right-4 z-20 p-4 rounded-xl bg-zinc-900/90 backdrop-blur-md border border-[#FF7500]/40 shadow-xl">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-lg bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-lg shrink-0">
-                    ⭐
-                  </div>
-                  <div>
-                    <p class="text-sm font-extrabold text-white">4.9/5 no Google Reviews</p>
-                    <p class="text-xs text-zinc-400">Comunidade #1 da Região</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
       </div>
@@ -442,37 +387,38 @@
          C. BARRA DE NÚMEROS E CREDENCIAIS (FAIXA DE IMPACTO)
          ====================================================================== -->
     <section
-      class="bg-zinc-900 border-y border-zinc-800 py-10 relative z-20"
+      class="bg-zinc-900 border-y border-zinc-800 py-8 relative z-20"
       aria-label="Diferenciais e Credenciais da Destroyer Cross"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-zinc-800">
+          
           <!-- Métrica 1 -->
           <div class="pt-4 sm:pt-0 sm:px-6 first:pl-0 first:pt-0 animar-cima">
-            <p class="font-display text-4xl sm:text-5xl text-[#FF7500] leading-none mb-1">
-              +500m²
+            <p class="font-display text-3xl sm:text-4xl text-[#FF7500] leading-none mb-1">
+              Comunidade Acolhedora
             </p>
-            <h2 class="text-base font-bold text-white">de Estrutura Completa</h2>
+            <h2 class="text-base font-bold text-white">Todos são bem-vindos</h2>
             <p class="text-sm text-zinc-400 mt-1">
-              Equipamentos de padrão internacional e estacionamento no local.
+              Um espaço seguro e sem julgamentos para você evoluir junto com a gente.
             </p>
           </div>
 
           <!-- Métrica 2 -->
-          <div class="pt-4 sm:pt-0 sm:px-6 animar-cima delay-100">
-            <p class="font-display text-4xl sm:text-5xl text-[#FF7500] leading-none mb-1">
-              100% Adaptável
+          <div class="pt-4 sm:pt-0 sm:px-6 animar-cima delay-100 ">
+            <p class="font-display text-3xl sm:text-4xl text-[#FF7500] leading-none mb-1">
+              100% <br>Adaptável
             </p>
             <h2 class="text-base font-bold text-white">Para Todos os Níveis</h2>
             <p class="text-sm text-zinc-400 mt-1">
-              Do iniciante sedentário ao atleta RX, respeitando seu ritmo.
+              Do iniciante ao atleta RX, respeitando seu ritmo.
             </p>
           </div>
 
           <!-- Métrica 3 -->
           <div class="pt-4 sm:pt-0 sm:px-6 animar-cima delay-200">
-            <p class="font-display text-4xl sm:text-5xl text-[#FF7500] leading-none mb-1">
-              Coaches Certificados
+            <p class="font-display text-3xl sm:text-4xl text-[#FF7500] leading-none mb-1">
+              Coaches Deticados
             </p>
             <h2 class="text-base font-bold text-white">Acompanhamento Técnico</h2>
             <p class="text-sm text-zinc-400 mt-1">
@@ -482,7 +428,7 @@
 
           <!-- Métrica 4 -->
           <div class="pt-4 sm:pt-0 sm:px-6 animar-cima delay-300">
-            <p class="font-display text-4xl sm:text-5xl text-[#FF7500] leading-none mb-1">
+            <p class="font-display text-3xl sm:text-4xl text-[#FF7500] leading-none mb-1">
               +10 Horários Diários
             </p>
             <h2 class="text-base font-bold text-white">Manhã, Tarde e Noite</h2>
@@ -506,7 +452,7 @@
         <!-- Cabeçalho Centralizado -->
         <div class="max-w-3xl mx-auto text-center space-y-4 mb-16 animar-cima">
           <span class="inline-block px-4 py-1.5 rounded-full bg-[#FF7500]/15 text-[#CC5E00] font-extrabold text-xs uppercase tracking-widest">
-            QUEBRE OS MITOS • O CROSSFIT É PARA MIM?
+            O CROSSFIT É PARA MIM?
           </span>
           <h2
             id="titulo-metodologia"
@@ -523,7 +469,7 @@
         <!-- Grid de 3 Pilares da Jornada do Aluno -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Pilar 1 -->
-          <article class="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm hover:shadow-xl hover:border-[#FF7500] transition-all duration-300 relative overflow-hidden group animar-cima">
+          <article class="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm hover:shadow-xl hover:border-[#FF7500] transition-all duration-300 relative overflow-hidden group animar-cima flex flex-col">
             <div class="w-14 h-14 rounded-xl bg-zinc-950 text-[#FF7500] flex items-center justify-center font-display text-3xl mb-6 group-hover:bg-[#FF7500] group-hover:text-zinc-950 transition-colors">
               01
             </div>
@@ -531,19 +477,19 @@
               FASE 1 • SEGURANÇA TOTAL
             </span>
             <h3 class="font-display text-3xl text-zinc-950 uppercase mb-3">
-              Adaptação Individualizada (Onboarding)
+              Adaptação Individualizada
             </h3>
-            <p class="text-zinc-600 leading-relaxed text-base">
+            <p class="text-zinc-600 leading-relaxed text-base mb-6">
               Primeiras aulas focadas em ensinar os movimentos fundamentais na sua velocidade, com cargas leves ou peso corporal e supervisão direta do Coach.
             </p>
-            <div class="mt-6 pt-5 border-t border-zinc-100 flex items-center gap-2 text-xs font-bold text-zinc-800">
-              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-              Ideal para quem está sedentário ou começando do zero
+            <div class="mt-auto pt-5 border-t border-zinc-100 flex items-center gap-2 text-xs font-bold text-zinc-800">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+              Ideal para quem está começando do zero
             </div>
           </article>
 
           <!-- Pilar 2 -->
-          <article class="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm hover:shadow-xl hover:border-[#FF7500] transition-all duration-300 relative overflow-hidden group animar-cima delay-100">
+          <article class="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm hover:shadow-xl hover:border-[#FF7500] transition-all duration-300 relative overflow-hidden group animar-cima delay-100 flex flex-col">
             <div class="w-14 h-14 rounded-xl bg-zinc-950 text-[#FF7500] flex items-center justify-center font-display text-3xl mb-6 group-hover:bg-[#FF7500] group-hover:text-zinc-950 transition-colors">
               02
             </div>
@@ -551,19 +497,19 @@
               FASE 2 • ZERO MONOTONIA
             </span>
             <h3 class="font-display text-3xl text-zinc-950 uppercase mb-3">
-              Evolução Constante (Nunca Cai na Rotina)
+              Evolução Constante 
             </h3>
-            <p class="text-zinc-600 leading-relaxed text-base">
+            <p class="text-zinc-600 leading-relaxed text-base mb-6">
               Todo dia um treino diferente (WOD). Você queima até <strong class="text-zinc-900">800 kcal por aula</strong> em 60 minutos dinâmicos, sem olhar para o relógio de tédio e ganhando força visível.
             </p>
-            <div class="mt-6 pt-5 border-t border-zinc-100 flex items-center gap-2 text-xs font-bold text-zinc-800">
-              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <div class="mt-auto pt-5 border-t border-zinc-100 flex items-center gap-2 text-xs font-bold text-zinc-800">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
               Emagrecimento acelerado, definição e disposição
             </div>
           </article>
 
           <!-- Pilar 3 -->
-          <article class="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm hover:shadow-xl hover:border-[#FF7500] transition-all duration-300 relative overflow-hidden group animar-cima delay-200">
+          <article class="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm hover:shadow-xl hover:border-[#FF7500] transition-all duration-300 relative overflow-hidden group animar-cima delay-200 flex flex-col">
             <div class="w-14 h-14 rounded-xl bg-zinc-950 text-[#FF7500] flex items-center justify-center font-display text-3xl mb-6 group-hover:bg-[#FF7500] group-hover:text-zinc-950 transition-colors">
               03
             </div>
@@ -573,12 +519,12 @@
             <h3 class="font-display text-3xl text-zinc-950 uppercase mb-3">
               Comunidade que Impulsiona
             </h3>
-            <p class="text-zinc-600 leading-relaxed text-base">
+            <p class="text-zinc-600 leading-relaxed text-base mb-6">
               Aqui ninguém treina sozinho de fone de ouvido ignorado num canto. Você faz amigos, supera limites e celebra cada conquista em grupo todos os dias.
             </p>
-            <div class="mt-6 pt-5 border-t border-zinc-100 flex items-center gap-2 text-xs font-bold text-zinc-800">
-              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-              Motivação real para manter a constância o ano inteiro
+            <div class="mt-auto pt-5 border-t border-zinc-100 flex items-center gap-2 text-xs font-bold text-zinc-800">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+              Motivação real para manter o nível o ano inteiro
             </div>
           </article>
         </div>
@@ -611,7 +557,7 @@
          ====================================================================== -->
     <section
       id="modalidades"
-      class="bg-zinc-950 text-white py-20 lg:py-28 bg-industrial-grid relative"
+      class="bg-zinc-950 text-white py-16 lg:py-24 bg-industrial-grid relative"
       aria-labelledby="titulo-modalidades"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -650,14 +596,14 @@
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-85"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/30 to-transparent"></div>
-                <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-[#FF7500] text-zinc-950 font-extrabold text-[11px] uppercase tracking-wider">
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded  bg-zinc-950/90 border border-[#FF7500]/50 text-[#FF7500] font-extrabold text-[11px] uppercase tracking-wider">
                   Adaptação Total
                 </span>
               </div>
 
               <div class="p-6">
                 <h3 class="font-display text-3xl text-white uppercase mb-2 group-hover:text-[#FF7500] transition-colors">
-                  CrossFit (WOD Diário)
+                  CrossFit 
                 </h3>
                 <p class="text-sm text-zinc-400 leading-relaxed mb-4">
                   Condicionamento físico geral combinando força, cárdio, mobilidade e agilidade em 60 minutos guiados.
@@ -683,7 +629,7 @@
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-between w-full text-sm font-extrabold text-[#FF7500] group-hover:text-white transition-colors"
               >
-                <span>Quero experimentar esta aula</span>
+                <span>Quero experimentar</span>
                 <span class="group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
               </a>
             </div>
@@ -733,7 +679,7 @@
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-between w-full text-sm font-extrabold text-[#FF7500] group-hover:text-white transition-colors"
               >
-                <span>Quero experimentar esta aula</span>
+                <span>Quero experimentar</span>
                 <span class="group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
               </a>
             </div>
@@ -783,7 +729,7 @@
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-between w-full text-sm font-extrabold text-[#FF7500] group-hover:text-white transition-colors"
               >
-                <span>Quero experimentar esta aula</span>
+                <span>Quero experimentar</span>
                 <span class="group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
               </a>
             </div>
@@ -800,7 +746,7 @@
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-85"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/30 to-transparent"></div>
-                <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-emerald-500 text-zinc-950 font-extrabold text-[11px] uppercase tracking-wider">
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded  bg-zinc-950/90 border border-[#FF7500]/50 text-[#FF7500] font-extrabold text-[11px] uppercase tracking-wider">
                   Alta Queima Calórica
                 </span>
               </div>
@@ -833,7 +779,7 @@
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-between w-full text-sm font-extrabold text-[#FF7500] group-hover:text-white transition-colors"
               >
-                <span>Quero experimentar esta aula</span>
+                <span>Quero experimentar</span>
                 <span class="group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
               </a>
             </div>
@@ -847,17 +793,18 @@
          ====================================================================== -->
     <section
       id="sobre"
-      class="bg-white text-zinc-900 py-20 lg:py-28"
+      class="bg-white text-zinc-900 py-14 lg:py-20"
       aria-labelledby="titulo-sobre"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 lg:items-stretch">
 
-          <!-- Lado Esquerdo (6 Colunas): Galeria Visual Mosaico do Box + Selo Oficial -->
-          <div class="lg:col-span-6 relative animar-esquerda">
-            <div class="grid grid-cols-2 gap-4">
-              <div class="space-y-4">
-                <div class="rounded-2xl overflow-hidden h-56 sm:h-64 bg-zinc-900 shadow-lg">
+          <!-- Lado Esquerdo (6 Colunas): Galeria Visual Mosaico Assimétrico Alinhado 100% ao Topo e Base do Texto -->
+          <div class="lg:col-span-6 relative min-h-[480px] lg:min-h-0 animar-esquerda">
+            <div class="grid grid-cols-2 gap-4 h-full lg:absolute lg:inset-0">
+              <!-- Coluna 1 do Mosaico (Alta -> Média -> Compacta) -->
+              <div class="flex flex-col gap-4 h-full min-h-0">
+                <div class="rounded-2xl overflow-hidden h-52 lg:h-auto lg:flex-[1.8] min-h-0 bg-zinc-900 shadow-lg">
                   <img
                     src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=700&q=80"
                     alt="Estrutura completa da Destroyer Cross com Rigs e anilhas olímpicas"
@@ -865,61 +812,57 @@
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div class="rounded-2xl overflow-hidden h-44 sm:h-52 bg-zinc-950 p-4 flex flex-col justify-between text-white border-2 border-[#FF7500]">
-                  <div class="flex items-center justify-between">
-                    <span class="text-xs font-extrabold uppercase tracking-wider text-[#FF7500]">CONFORTO &amp; ACESSO</span>
-                    <span class="text-xl">🚗</span>
-                  </div>
-                  <div>
-                    <p class="font-display text-2xl sm:text-3xl tracking-wide text-white leading-tight">
-                      ESTACIONAMENTO NO LOCAL &amp; VESTIÁRIOS AMPLOS
-                    </p>
-                    <p class="text-xs text-zinc-300 mt-1">
-                      Treine às 06h ou 07h da manhã, tome sua ducha e vá direto para o trabalho!
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="space-y-4 pt-6">
-                <div class="rounded-2xl overflow-hidden h-44 sm:h-52 bg-zinc-900 shadow-lg relative">
+                <div class="rounded-2xl overflow-hidden h-40 lg:h-auto lg:flex-[1.3] min-h-0 bg-zinc-900 shadow-lg">
                   <img
-                    src="assets/img/aulao-fim-de-semana.jpeg"
+                    src="https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="Estrutura completa da Destroyer Cross com Rigs e anilhas olímpicas"
+                    loading="lazy"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div class="rounded-2xl overflow-hidden h-32 lg:h-auto lg:flex-[0.9] min-h-0 bg-zinc-900 shadow-lg relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1519311965067-36d3e5f33d39?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
                     alt="Comunidade Destroyer Cross nos Aulões de Fim de Semana e Feriados"
                     loading="lazy"
                     class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div class="rounded-2xl overflow-hidden h-56 sm:h-64 bg-zinc-900 shadow-lg">
+              </div>
+
+              <!-- Coluna 2 do Mosaico (Compacta -> Alta -> Média) -->
+              <div class="flex flex-col gap-4 h-full min-h-0">
+                <div class="rounded-2xl overflow-hidden h-32 lg:h-auto lg:flex-[0.9] min-h-0 bg-zinc-900 shadow-lg relative">
                   <img
-                    src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=80"
+                    src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="Comunidade Destroyer Cross nos Aulões de Fim de Semana e Feriados"
+                    loading="lazy"
+                    class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div class="rounded-2xl overflow-hidden h-52 lg:h-auto lg:flex-[1.8] min-h-0 bg-zinc-900 shadow-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1651315830980-bf5a198ffffb?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
                     alt="Acompanhamento de Coaches na Destroyer Cross"
                     loading="lazy"
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-              </div>
-            </div>
-
-            <!-- Selo Central de Box Oficial Afiliado -->
-            <div class="mt-4 sm:mt-0 sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 bg-zinc-950 text-white px-5 py-3.5 rounded-2xl border-2 border-[#FF7500] shadow-2xl flex items-center gap-3">
-              <img
-                src="assets/img/logo-destroyer.jpeg"
-                alt="Selo Oficial Destroyer Cross"
-                width="44"
-                height="44"
-                class="w-11 h-11 rounded-lg object-cover border border-[#FF7500]"
-              />
-              <div>
-                <p class="font-display text-xl leading-none text-[#FF7500]">BOX OFICIAL AFILIADO</p>
-                <p class="text-[11px] font-bold uppercase tracking-wider text-zinc-300">CrossFit® • Jd. Myrna, SP</p>
+                <div class="rounded-2xl overflow-hidden h-40 lg:h-auto lg:flex-[1.3] min-h-0 bg-zinc-900 shadow-lg relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1761839258420-5c3e2f2e2a74?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="Comunidade Destroyer Cross nos Aulões de Fim de Semana e Feriados"
+                    loading="lazy"
+                    class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Lado Direito (6 Colunas): Narrativa, Equipe de Coaches e CTAs -->
           <div class="lg:col-span-6 space-y-6 animar-direita">
-            <span class="inline-block px-4 py-1.5 rounded-full bg-[#FF7500]/15 text-[#CC5E00] font-extrabold text-xs uppercase tracking-widest">
+            <span class="inline-block w-fit px-4 py-1.5 rounded-full bg-[#FF7500]/15 text-[#CC5E00] font-extrabold text-xs uppercase tracking-widest">
               NOSSO DNA • ESTRUTURA &amp; COACHES
             </span>
 
@@ -927,7 +870,7 @@
               id="titulo-sobre"
               class="font-display text-4xl sm:text-5xl lg:text-6xl uppercase tracking-tight text-zinc-950 leading-[1.02]"
             >
-              Equipamentos de Elite e <span class="text-[#FF7500]">Coaches que cuidam de você</span> o tempo todo
+              Equipamentos de Elite e Coaches que <span class="text-[#FF7500]">  cuidam de você</span> o tempo todo
             </h2>
 
             <p class="text-base sm:text-lg text-zinc-600 leading-relaxed">
@@ -936,10 +879,10 @@
 
             <div class="bg-zinc-50 border-l-4 border-[#FF7500] p-5 rounded-r-xl space-y-2">
               <h3 class="font-display text-2xl text-zinc-950 uppercase">
-                🛡️ Segurança em 1º Lugar: Postura Corrigida a Cada Repetição
+                Segurança em 1º Lugar: Postura Corrigida a Cada Repetição
               </h3>
               <p class="text-sm text-zinc-600 leading-relaxed">
-                Nossos Coaches certificados acompanham de perto sua execução do início ao fim da aula, ajustando cargas e corrigindo sua postura em tempo real para proteger seus joelhos, ombros e coluna.
+                Nossos Coaches acompanham de perto sua execução do início ao fim da aula, ajustando cargas e corrigindo sua postura em tempo real para proteger seus joelhos, ombros e coluna.
               </p>
             </div>
 
@@ -947,15 +890,15 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm font-semibold text-zinc-800">
               <div class="flex items-center gap-2.5">
                 <span class="w-5 h-5 rounded-full bg-[#FF7500]/20 text-[#CC5E00] flex items-center justify-center text-xs font-extrabold">✓</span>
-                <span>Box Oficial Afiliado CrossFit®</span>
+                <span>Grade ampla de horários</span>
               </div>
               <div class="flex items-center gap-2.5">
                 <span class="w-5 h-5 rounded-full bg-[#FF7500]/20 text-[#CC5E00] flex items-center justify-center text-xs font-extrabold">✓</span>
-                <span>Estacionamento próprio no local</span>
+                <span>Estacionamento no local</span>
               </div>
               <div class="flex items-center gap-2.5">
                 <span class="w-5 h-5 rounded-full bg-[#FF7500]/20 text-[#CC5E00] flex items-center justify-center text-xs font-extrabold">✓</span>
-                <span>Vestiários completos com chuveiros</span>
+                <span>Equipamentos oficiais</span>
               </div>
               <div class="flex items-center gap-2.5">
                 <span class="w-5 h-5 rounded-full bg-[#FF7500]/20 text-[#CC5E00] flex items-center justify-center text-xs font-extrabold">✓</span>
@@ -1019,7 +962,7 @@
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 mb-6 border-b border-zinc-800">
             <div>
               <span class="text-xs font-extrabold uppercase tracking-widest text-[#FF7500]">
-                ⏰ HORÁRIOS ATUALIZADOS • SEGUNDA A DOMINGO
+                HORÁRIOS ATUALIZADOS • SEGUNDA A SÁBADO
               </span>
               <h3 class="font-display text-3xl text-white uppercase mt-1">
                 Grade Oficial de Treinos da Semana
@@ -1029,14 +972,14 @@
               href="modalidades-e-horarios.html"
               class="inline-flex items-center gap-2 text-sm font-bold text-[#FF7500] hover:text-[#FF9433] transition-colors"
             >
-              <span>Ver grade detalhada por modalidade</span>
+              <span>Ver grade detalhada</span>
               <span aria-hidden="true">→</span>
             </a>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Turno Manhã (Seg a Sex) -->
-            <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-5">
+            <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-5 flex flex-col">
               <div class="flex items-center justify-between mb-3">
                 <span class="text-xs font-extrabold uppercase tracking-wider text-[#FF7500] bg-[#FF7500]/10 px-2.5 py-1 rounded">
                   SEGUNDA A SEXTA
@@ -1048,13 +991,13 @@
                 <span class="px-3.5 py-1.5 rounded-lg bg-zinc-950 border border-zinc-700 font-extrabold text-sm text-white">06:00</span>
                 <span class="px-3.5 py-1.5 rounded-lg bg-zinc-950 border border-zinc-700 font-extrabold text-sm text-white">07:00</span>
               </div>
-              <p class="text-xs text-zinc-400 mt-3">
+              <p class="text-xs text-zinc-400 mt-auto pt-3">
                 Comece o dia com energia máxima antes do trabalho.
               </p>
             </div>
 
             <!-- Turno Tarde & Noite (Seg a Sex) -->
-            <div class="bg-zinc-900/90 border border-[#FF7500]/40 rounded-xl p-5">
+            <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-5 flex flex-col">
               <div class="flex items-center justify-between mb-3">
                 <span class="text-xs font-extrabold uppercase tracking-wider text-[#FF7500] bg-[#FF7500]/10 px-2.5 py-1 rounded">
                   SEGUNDA A SEXTA
@@ -1065,19 +1008,19 @@
               <div class="flex flex-wrap gap-2">
                 <span class="px-3 py-1.5 rounded-lg bg-zinc-950 border border-zinc-700 font-extrabold text-sm text-white">16:30</span>
                 <span class="px-3 py-1.5 rounded-lg bg-zinc-950 border border-zinc-700 font-extrabold text-sm text-white">17:30</span>
-                <span class="px-3 py-1.5 rounded-lg bg-zinc-950 border border-[#FF7500]/50 font-extrabold text-sm text-[#FF7500]">18:30</span>
-                <span class="px-3 py-1.5 rounded-lg bg-zinc-950 border border-[#FF7500]/50 font-extrabold text-sm text-[#FF7500]">19:30</span>
+                <span class="px-3 py-1.5 rounded-lg bg-zinc-950 border border-zinc-700 font-extrabold text-sm text-white">18:30</span>
+                <span class="px-3 py-1.5 rounded-lg bg-zinc-950 border border-zinc-700 font-extrabold text-sm text-white">19:30</span>
                 <span class="px-3 py-1.5 rounded-lg bg-zinc-950 border border-zinc-700 font-extrabold text-sm text-white">20:30</span>
               </div>
-              <p class="text-xs text-zinc-400 mt-3">
+              <p class="text-xs text-zinc-400 mt-auto pt-3">
                 5 horários seguidos para você nunca perder o treino!
               </p>
             </div>
 
             <!-- Fim de Semana & Feriados -->
-            <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-5">
+            <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-5 flex flex-col">
               <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-[#FF7500] bg-[#FF7500]/10 px-2.5 py-1 rounded">
                   FIM DE SEMANA &amp; FERIADOS
                 </span>
                 <span class="text-sm font-bold text-zinc-400">🏆 Aulão</span>
@@ -1085,14 +1028,17 @@
               <p class="font-display text-2xl text-white mb-3">AULÕES DA COMUNIDADE</p>
               <div class="space-y-2 text-sm">
                 <div class="flex items-center justify-between bg-zinc-950 px-3 py-1.5 rounded-lg border border-zinc-800">
-                  <span class="font-bold text-zinc-300">Sábados (Aulão):</span>
+                  <span class="font-bold text-zinc-300">Sábados:</span>
                   <span class="font-extrabold text-[#FF7500]">08:00</span>
                 </div>
                 <div class="flex items-center justify-between bg-zinc-950 px-3 py-1.5 rounded-lg border border-zinc-800">
-                  <span class="font-bold text-zinc-300">Domingos e Feriados:</span>
+                  <span class="font-bold text-zinc-300">Feriados:</span>
                   <span class="font-extrabold text-[#FF7500]">09:00</span>
                 </div>
               </div>
+              <p class="text-xs text-zinc-400 mt-auto pt-3">
+                Treino em equipe, superação coletiva e energia máxima.
+              </p>
             </div>
           </div>
         </div>
@@ -1151,25 +1097,22 @@
                 PLANOS PRÓPRIOS DESTROYER
               </span>
               <h3 class="font-display text-3xl text-white uppercase">
-                Planos Recorrentes / Anual
+                Planos Recorrentes
               </h3>
               <div class="mt-4 mb-6">
                 <p class="font-display text-4xl sm:text-5xl text-[#FF7500] leading-none">
-                  MENSAL • TRIMESTRAL • ANUAL
+                  MENSAL <br> TRIMESTRAL <br> ANUAL
                 </p>
                 <p class="text-xs text-zinc-400 mt-1">
                   Descontos progressivos nos planos fidelidade
                 </p>
               </div>
               <p class="text-sm text-zinc-300 leading-relaxed mb-6">
-                Acesso ilimitado ou frequência flexível (3x a 6x na semana), aplicativo de check-in e acompanhamento de evolução de cargas e WODs.
+                Acesso ilimitado ou frequência flexível (3x a 6x na semana)
               </p>
               <ul class="space-y-3 text-sm text-zinc-200 mb-8">
                 <li class="flex items-center gap-2.5">
-                  <span class="text-[#FF7500] font-bold">✓</span> Acesso a CrossFit, LPO, Gymnastics e Hyrox
-                </li>
-                <li class="flex items-center gap-2.5">
-                  <span class="text-[#FF7500] font-bold">✓</span> Aplicativo de check-in e evolução de PRs
+                  <span class="text-[#FF7500] font-bold">✓</span> Acesso a todos os horários
                 </li>
                 <li class="flex items-center gap-2.5">
                   <span class="text-[#FF7500] font-bold">✓</span> Aulões especiais de sábado e feriados inclusos
@@ -1709,16 +1652,17 @@
     aria-label="Agende sua Aula Experimental Gratuita pelo WhatsApp"
     class="fixed bottom-6 right-6 z-50 group flex items-center gap-3"
   >
-    <!-- Tooltip Desktop -->
+    <!-- Tooltip 
     <span class="hidden md:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zinc-950/95 border border-white/15 text-white font-bold text-xs shadow-xl opacity-95 group-hover:border-[#10b981] transition-all">
       <span class="w-2 h-2 rounded-full bg-[#10b981] animate-ping"></span>
       Agende sua Aula Grátis!
     </span>
+    Desktop -->
 
     <!-- Ícone Flutuante com Pulso -->
     <span class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#10b981] hover:bg-[#059669] text-zinc-950 flex items-center justify-center shadow-2xl whatsapp-pulse transition-transform duration-200 group-hover:scale-110">
       <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.126.556 4.124 1.535 5.862l-1.535 5.608 5.755-1.51c1.691.908 3.621 1.425 5.676 1.425 6.627 0 12-5.373 12-12s-5.373-12-12.431-11.385z"/>
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
       </svg>
     </span>
   </a>

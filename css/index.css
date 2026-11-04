@@ -36,12 +36,15 @@
     font-family: var(--font-sans);
     background-color: #09090b;
     color: #f4f4f5;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   body {
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     selection-background-color: #FF7500;
     selection-color: #09090b;
   }
