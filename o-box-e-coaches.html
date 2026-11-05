@@ -159,167 +159,222 @@
 
   <main>
     <!-- HERO INTERNO -->
-    <section class="relative py-20 lg:py-24 bg-zinc-950 bg-industrial-grid border-b border-zinc-800 overflow-hidden">
-      <div class="absolute inset-0 bg-radial-energy pointer-events-none"></div>
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div class="lg:col-span-7 space-y-5 animar-esquerda">
-            <nav aria-label="Breadcrumb" class="text-xs font-bold uppercase tracking-wider text-zinc-400 flex items-center gap-2">
-              <a href="index.html" class="hover:text-[#FF7500]">Início</a>
-              <span>/</span>
-              <span class="text-[#FF7500]">O Box &amp; Coaches</span>
-            </nav>
-            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FF7500]/15 border border-[#FF7500]/40 text-[#FF7500] text-xs font-extrabold uppercase tracking-widest">
-              🔥 FORÇA • FOCO • DISCIPLINA • RESULTADO
-            </span>
-            <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl uppercase tracking-tight text-white leading-[0.95]">
-              A CASA DE QUEM <span class="text-fire-gradient">NÃO DESISTE</span> NO JD. MYRNA
-            </h1>
-            <p class="text-lg text-zinc-300 leading-relaxed">
-              A <strong class="text-white">Destroyer Cross</strong> nasceu com uma missão clara: entregar uma estrutura de padrão internacional na Zona Sul de São Paulo onde qualquer pessoa — do iniciante sedentário ao atleta competitivo — seja acolhida como família.
-            </p>
-          </div>
-          <div class="lg:col-span-5 animar-direita">
-            <div class="rounded-2xl overflow-hidden border-2 border-[#FF7500]/50 shadow-2xl bg-zinc-900">
-              <img
-                src="assets/img/emblema-3d.png"
-                alt="Emblema Oficial Destroyer Cross Training"
-                class="w-full h-80 sm:h-96 object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
 
-    <!-- ESTRUTURA DE +500m² E EQUIPAMENTOS -->
-    <section class="bg-zinc-50 text-zinc-900 py-20 lg:py-24">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16 animar-cima">
-          <span class="inline-block px-4 py-1.5 rounded-full bg-[#FF7500]/15 text-[#CC5E00] font-extrabold text-xs uppercase tracking-widest">
-            INFRAESTRUTURA COMPLETA
-          </span>
-          <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl uppercase text-zinc-950">
-            Mais de 500m² pensados para a <span class="text-[#FF7500]">sua performance e conforto</span>
-          </h2>
-          <p class="text-base sm:text-lg text-zinc-600">
-            Localizado na Av. Carlos Alberto Bastos Machado, 1342, nosso Box conta com ventilação ampla, piso de impacto emborrachado e equipamentos calibrados.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article class="bg-white rounded-2xl p-7 border border-zinc-200 shadow-sm animar-cima">
-            <div class="w-12 h-12 rounded-xl bg-zinc-950 text-[#FF7500] flex items-center justify-center text-2xl mb-4">🏋️</div>
-            <h3 class="font-display text-2xl text-zinc-950 uppercase mb-2">Rigs Oficiais &amp; Barras Olímpicas</h3>
-            <p class="text-sm text-zinc-600 leading-relaxed">
-              Barras olímpicas masculinas (20kg) e femininas (15kg), barras técnicas leves para iniciantes, anilhas bumper de alta absorção e Rigs espaçosos para ginástica e agachamentos.
-            </p>
-          </article>
-
-          <article class="bg-white rounded-2xl p-7 border border-zinc-200 shadow-sm animar-cima delay-100">
-            <div class="w-12 h-12 rounded-xl bg-zinc-950 text-[#FF7500] flex items-center justify-center text-2xl mb-4">🚣</div>
-            <h3 class="font-display text-2xl text-zinc-950 uppercase mb-2">Ergômetros &amp; Zona HYROX</h3>
-            <p class="text-sm text-zinc-600 leading-relaxed">
-              Remos indoor, AirBikes, Wall Balls, Kettlebells, Dumbbells de todas as cargas, caixas pliométricas e cordas navais para treinos metabólicos de alta intensidade.
-            </p>
-          </article>
-
-          <article class="bg-white rounded-2xl p-7 border border-zinc-200 shadow-sm animar-cima delay-200">
-            <div class="w-12 h-12 rounded-xl bg-zinc-950 text-[#FF7500] flex items-center justify-center text-2xl mb-4">🚿</div>
-            <h3 class="font-display text-2xl text-zinc-950 uppercase mb-2">Vestiários &amp; Estacionamento</h3>
-            <p class="text-sm text-zinc-600 leading-relaxed">
-              Estacionamento gratuito no local, vestiários masculino e feminino amplos com chuveiros quentes e área de convivência para o pré e pós-treino.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- NOSSOS HEAD COACHES E CERTIFICAÇÕES -->
-    <section class="bg-zinc-950 text-white py-20 lg:py-28 border-t border-zinc-800">
+    <!-- 1. SEÇÃO EM DESTAQUE: NOSSA HEAD COACH -->
+    <section id="coach" class="bg-zinc-900  border-b border-zinc-800  text-white py-10 lg:py-20 border-b border-zinc-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center space-y-4 mb-16 animar-cima">
           <span class="inline-block px-4 py-1.5 rounded-full bg-[#FF7500]/15 border border-[#FF7500]/30 text-[#FF7500] font-extrabold text-xs uppercase tracking-widest">
             LIDERANÇA TÉCNICA E SEGURANÇA
           </span>
           <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl uppercase text-white">
-            Conheça Nossos <span class="text-[#FF7500]">Coaches</span>
+            Conheça Nossa <span class="text-[#FF7500]">Head Coach</span>
           </h2>
-          <p class="text-zinc-400 text-base sm:text-lg">
-            Profissionais formados em Educação Física e certificados internacionalmente, prontos para adaptar cada exercício para você.
+          <p class="text-zinc-400 text-base sm:text-base">
+            Acompanhamento próximo, olhar atento à sua postura e adaptação individual em cada treino.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Coach 1 -->
-          <article class="bg-zinc-900 border border-zinc-800 hover:border-[#FF7500] rounded-2xl overflow-hidden transition-all animar-cima">
-            <div class="h-72 overflow-hidden bg-zinc-950 relative">
-              <img
-                src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=700&q=80"
-                alt="Head Coach Destroyer Cross"
-                loading="lazy"
-                class="w-full h-full object-cover object-top"
-              />
-              <span class="absolute bottom-3 left-3 px-3 py-1 rounded bg-[#FF7500] text-zinc-950 font-extrabold text-xs uppercase">
-                Head Coach &amp; Programação
-              </span>
+        <!-- Card de Destaque da Coach (Layout 2 Colunas) -->
+        <article class="max-w-6xl mx-auto bg-zinc-950 border border-zinc-800 hover:border-[#FF7500]/60 rounded-3xl p-6 sm:p-10 lg:p-12 shadow-2xl transition-all animar-cima">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <!-- Foto da Coach em Destaque -->
+            <div class="lg:col-span-5">
+              <div class="relative rounded-2xl overflow-hidden border-2 border-[#FF7500] bg-zinc-950 shadow-xl aspect-[4/5]">
+                <img
+                  src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=800&q=80"
+                  alt="Head Coach da Destroyer Cross"
+                  loading="lazy"
+                  class="w-full h-full object-cover object-top"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-4 left-4 px-3.5 py-1.5 rounded-lg bg-[#FF7500] text-zinc-950 font-extrabold text-xs uppercase tracking-wider shadow-lg">
+                  Head Coach • Destroyer Cross
+                </span>
+              </div>
             </div>
-            <div class="p-6 space-y-3">
-              <h3 class="font-display text-3xl text-white uppercase">Coach Rodrigo "Destroyer"</h3>
-              <p class="text-xs font-bold uppercase tracking-wider text-[#FF7500]">CREF Ativo • CrossFit® Level 2 • Especialista LPO</p>
-              <p class="text-sm text-zinc-300 leading-relaxed">
-                Responsável pela periodização técnica do Box. Especialista em biomecânica do Levantamento de Peso Olímpico e adaptação segura para iniciantes.
+
+            <!-- Nome, Credenciais e Pequeno Texto -->
+            <div class="lg:col-span-7 space-y-5">
+              <div class="space-y-2">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-[#FF7500] block">
+                  CREF Ativo - Especialista em CrossFit, LPO, Gymnastics &amp; Condicionamento
+                </span>
+                <h3 class="font-display text-4xl sm:text-5xl text-white uppercase tracking-wide leading-none">
+                  Coach Aleh (Alessandra Alves)
+                </h3>
+              </div>
+
+              <p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
+                À frente de toda a metodologia e programação da <strong class="text-white">Destroyer Cross</strong>, nossa Coach acompanha de perto a evolução de cada aluno. Seu foco é garantir que você aprenda a técnica correta de cada movimento, adapte as cargas à sua realidade e supere seus limites com total segurança.
               </p>
+
+              <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+                Seja na sua primeira aula experimental ou na preparação para desafios avançados, você nunca treina sozinho: há sempre orientação individualizada, correção postural e motivação do início ao fim do WOD.
+              </p>
+
+              <!-- Diferenciais do Acompanhamento -->
+              <div class="pt-3 grid grid-cols-1 sm:grid-cols-3 gap-3 border-t border-zinc-800">
+                <div class="bg-zinc-950/80 border border-zinc-800 rounded-xl p-3.5">
+                  <p class="text-[#FF7500] font-display text-xl uppercase leading-none mb-1">100% Adaptável</p>
+                  <p class="text-xs text-zinc-400">Treinos ajustados para o seu nível atual</p>
+                </div>
+                <div class="bg-zinc-950/80 border border-zinc-800 rounded-xl p-3.5">
+                  <p class="text-[#FF7500] font-display text-xl uppercase leading-none mb-1">Técnica &amp; Postura</p>
+                  <p class="text-xs text-zinc-400">Correção de perto para zero lesões</p>
+                </div>
+                <div class="bg-zinc-950/80 border border-zinc-800 rounded-xl p-3.5">
+                  <p class="text-[#FF7500] font-display text-xl uppercase leading-none mb-1">Acolhimento</p>
+                  <p class="text-xs text-zinc-400">Atenção especial para quem está começando</p>
+                </div>
+              </div>
             </div>
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2. ESTRUTURA E EQUIPAMENTOS -->
+    <section id="estrutura" class="bg-zinc-50 text-zinc-900 py-20 lg:py-28">
+
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16 animar-cima">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-[#FF7500]/15 text-[#CC5E00] font-extrabold text-xs uppercase tracking-widest">
+            INFRAESTRUTURA COMPLETA
+          </span>
+          <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl uppercase text-zinc-950">
+            Box pensado para a sua<span class="text-[#FF7500]"> performance</span> e <span class="text-[#FF7500]">conforto</span>
+          </h2>
+          <p class="text-base sm:text-lg text-zinc-600">
+            Localizado na Av. Carlos Alberto Bastos Machado, 1342, oferecemos um espaço planejado para a sua evolução: variedades de equipamentos oficiais, piso de alto impacto para sua segurança e a atmosfera certa para você superar cada WOD.          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-white rounded-2xl p-7 border border-zinc-200 shadow-sm animar-cima">
+            <div class="flex items-center gap-4 mb-2">
+              <div class="w-12 h-12 rounded-xl bg-zinc-950 text-[#FF7500] flex items-center justify-center text-2xl mb-4">🏋️</div>
+              <h3 class="font-display text-2xl text-zinc-950 uppercase mb-2">Rigs Oficiais &amp; <br> Barras Olímpicas</h3>
+            </div>
+            <p class="text-sm text-zinc-600 leading-relaxed">
+              Barras olímpicas masculinas (20kg) e femininas (15kg), barras técnicas leves para iniciantes, anilhas bumper de alta absorção e Rigs espaçosos para ginástica e agachamentos.
+            </p>
           </article>
 
-          <!-- Coach 2 -->
-          <article class="bg-zinc-900 border border-zinc-800 hover:border-[#FF7500] rounded-2xl overflow-hidden transition-all animar-cima delay-100">
-            <div class="h-72 overflow-hidden bg-zinc-950 relative">
-              <img
-                src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80"
-                alt="Coach Gymnastics e Adaptação Destroyer Cross"
-                loading="lazy"
-                class="w-full h-full object-cover object-top"
-              />
-              <span class="absolute bottom-3 left-3 px-3 py-1 rounded bg-[#FF7500] text-zinc-950 font-extrabold text-xs uppercase">
-                Coach Gymnastics &amp; Onboarding
-              </span>
+          <article class="bg-white rounded-2xl p-7 border border-zinc-200 shadow-sm animar-cima delay-100">
+            <div class="flex items-center gap-4 mb-2">
+              <div class="w-12 h-12 rounded-xl bg-zinc-950 text-[#FF7500] flex items-center justify-center text-2xl mb-4">🚣</div>
+              <h3 class="font-display text-2xl text-zinc-950 uppercase mb-2">Ergômetros &amp; <br> Zona HYROX</h3>
             </div>
-            <div class="p-6 space-y-3">
-              <h3 class="font-display text-3xl text-white uppercase">Coach Mariana Costa</h3>
-              <p class="text-xs font-bold uppercase tracking-wider text-[#FF7500]">CREF Ativo • CrossFit® Level 1 • Gymnastics Cert.</p>
-              <p class="text-sm text-zinc-300 leading-relaxed">
-                Focada na recepção de novos alunos (Onboarding), mobilidade articular, fortalecimento de core e progressões pedagógicas de ginástica.
-              </p>
-            </div>
+
+            <p class="text-sm text-zinc-600 leading-relaxed">
+              Remos indoor, AirBikes, Wall Balls, Kettlebells, Dumbbells de todas as cargas, caixas pliométricas e cordas navais para treinos metabólicos de alta intensidade.
+            </p>
           </article>
 
-          <!-- Coach 3 -->
-          <article class="bg-zinc-900 border border-zinc-800 hover:border-[#FF7500] rounded-2xl overflow-hidden transition-all animar-cima delay-200">
-            <div class="h-72 overflow-hidden bg-zinc-950 relative">
-              <img
-                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=80"
-                alt="Coach Endurance e HYROX Destroyer Cross"
-                loading="lazy"
-                class="w-full h-full object-cover object-center"
-              />
-              <span class="absolute bottom-3 left-3 px-3 py-1 rounded bg-emerald-500 text-zinc-950 font-extrabold text-xs uppercase">
-                Coach Endurance &amp; HYROX
-              </span>
+          <article class="bg-white rounded-2xl p-7 border border-zinc-200 shadow-sm animar-cima delay-200">
+            <div class="flex items-center gap-4 mb-2">
+              <div class="w-12 h-12 rounded-xl bg-zinc-950 text-[#FF7500] flex items-center justify-center text-2xl mb-4">🛡️</div>
+              <h3 class="font-display text-2xl text-zinc-950 uppercase mb-2">PISO PREMIUM &amp; <br> EQUIPAMENTOS CALIBRADOS</h3>
             </div>
-            <div class="p-6 space-y-3">
-              <h3 class="font-display text-3xl text-white uppercase">Coach Thiago Santos</h3>
-              <p class="text-xs font-bold uppercase tracking-wider text-[#FF7500]">CREF Ativo • Especialista Condicionamento Metabólico</p>
-              <p class="text-sm text-zinc-300 leading-relaxed">
-                Lidera os treinos metabólicos de alta queima calórica, preparação para provas HYROX e os tradicionais aulões de fim de semana da comunidade.
-              </p>
-            </div>
+            <p class="text-sm text-zinc-600 leading-relaxed">
+              Piso de alto impacto para absorção de choques e proteção articular, somado a equipamentos calibrados que garantem máxima precisão e segurança em cada repetição do seu treino.
+            </p>
           </article>
         </div>
 
+        <!-- Mosaico de Fotos e Mapa -->
+        <div class="pt-16 space-y-16">
+
+          <!-- Mosaico de 4 Fotos Ocupando Toda a Largura da Grid -->
+          <div class="w-full lg:h-[560px] animar-esquerda">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 h-full">
+
+              <!-- Coluna 1 do Mosaico (Alta -> Compacta) -->
+              <div class="flex flex-col gap-4 sm:gap-6 h-full min-h-0">
+                <div class="rounded-2xl overflow-hidden h-64 lg:h-auto lg:flex-[1.6] min-h-0 bg-zinc-900 shadow-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80"
+                    alt="Estrutura completa da Destroyer Cross com Rigs e anilhas olímpicas"
+                    loading="lazy"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+
+              <!-- Coluna 2 do Mosaico (Compacta -> Alta) -->
+              <div class="flex flex-col gap-4 sm:gap-6 h-full min-h-0">
+                <div class="rounded-2xl overflow-hidden h-52 lg:h-auto lg:flex-[1] min-h-0 bg-zinc-900 shadow-lg relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="Comunidade Destroyer Cross nos Aulões de Fim de Semana e Feriados"
+                    loading="lazy"
+                    class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div class="rounded-2xl overflow-hidden h-52 lg:h-auto lg:flex-[1] min-h-0 bg-zinc-900 shadow-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1651315830980-bf5a198ffffb?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="Acompanhamento de Coaches na Destroyer Cross"
+                    loading="lazy"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="grid grid-cols-1 gap-8 lg:items-stretch animar-cima">
+            <div class="bg-zinc-950 border border-[#FF7500]/40 rounded-3xl p-8 sm:p-12 lg:p-14 shadow-2xl">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-5 flex flex-col justify-center">
+                  <span class="text-xs font-extrabold uppercase tracking-widest text-[#FF7500] block">
+                    COMO CHEGAR NO BOX
+                  </span>
+                  <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl text-white uppercase leading-none">
+                    Nossa Localização no <span class="text-[#FF7500]">Jardim Myrna</span>
+                  </h2>
+                  <p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
+                    <strong>Av. Carlos Alberto Bastos Machado, 1342 - Jardim Myrna, São Paulo - SP, 04856-089</strong>
+                  </p>
+                  <div class="pt-3">
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Av.+Carlos+Alberto+Bastos+Machado,+1342+-+Jardim+Myrna,+S%C3%A3o+Paulo+-+SP,+04856-089"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center justify-center w-full sm:w-fit bg-[#FF7500] hover:bg-[#FF881B] text-zinc-950 font-extrabold text-sm sm:text-base px-7 py-4 rounded-xl glow-orange transition-all"
+                    >
+                      <span>Abrir Rota no Google Maps / Waze →</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-6 h-80 sm:h-96 lg:h-[380px] rounded-2xl overflow-hidden border-2 border-zinc-800 shadow-2xl bg-zinc-900">
+                  <iframe
+                    title="Localização Destroyer Cross - Av. Carlos Alberto Bastos Machado, 1342 - Jardim Myrna, São Paulo - SP"
+                    src="https://www.google.com/maps?q=Av.+Carlos+Alberto+Bastos+Machado,+1342+-+Jardim+Myrna,+S%C3%A3o+Paulo+-+SP,+04856-089&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
         <!-- CTA Visita Guiada -->
-        <div class="mt-16 bg-zinc-900 border-2 border-[#FF7500] rounded-2xl p-8 sm:p-10 text-center space-y-5 animar-cima">
+        <div class="mt-10 bg-zinc-950 border-2 border-[#FF7500] rounded-2xl p-8 sm:p-10 text-center space-y-5 shadow-2xl animar-cima">
           <h3 class="font-display text-4xl sm:text-5xl text-white uppercase">
             Venha conhecer nossa estrutura pessoalmente!
           </h3>
@@ -333,7 +388,7 @@
             class="inline-flex items-center gap-2 bg-[#10b981] hover:bg-[#059669] text-zinc-950 font-extrabold text-base sm:text-lg px-8 py-4 rounded-xl glow-emerald transition-all hover:scale-[1.03]"
           >
             <span>Agendar Minha Visita + Aula Grátis</span>
-            <span aria-hidden="true">→</span>
+            
           </a>
         </div>
       </div>
