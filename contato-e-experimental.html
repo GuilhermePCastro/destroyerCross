@@ -162,10 +162,10 @@
     <section class="relative py-10 lg:py-20 bg-zinc-950 bg-industrial-grid overflow-hidden">
       <div class="absolute inset-0 bg-radial-energy pointer-events-none"></div>
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch">
 
           <!-- Coluna Esquerda: Informações + O que levar no 1º dia -->
-          <div class="lg:col-span-6 space-y-6 animar-esquerda">
+          <div class="lg:col-span-6 flex flex-col justify-between space-y-6 animar-esquerda">
             <h1 class="font-display text-5xl sm:text-6xl uppercase tracking-tight text-white leading-[0.95]">
               AGENDE SUA <span class="text-fire-gradient">AULA EXPERIMENTAL</span> EM 1 MINUTO
             </h1>
@@ -219,8 +219,8 @@
           </div>
 
           <!-- Coluna Direita: Formulário Interativo Integrado ao WhatsApp -->
-          <div class="lg:col-span-6 animar-direita">
-            <div class="bg-zinc-900 border-2 border-[#FF7500]/60 rounded-2xl p-6 sm:p-8 shadow-2xl ">
+          <div class="lg:col-span-6 flex flex-col animar-direita">
+            <div class="bg-zinc-900 border-2 border-[#FF7500]/60 rounded-2xl p-6 sm:p-8 shadow-2xl h-full flex flex-col">
               <h2 class="font-display text-3xl sm:text-4xl text-white uppercase mb-2">
                 Reservar Minha Aula Gratuita
               </h2>
@@ -228,7 +228,7 @@
                 Escolha sua preferência abaixo e clique para confirmar instantaneamente no WhatsApp:
               </p>
 
-              <form id="form-experimental" class="space-y-4">
+              <form id="form-experimental" class="flex-1 flex flex-col justify-between space-y-4">
                 <div>
                   <label for="nome-aluno" class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">
                     Seu Nome *
